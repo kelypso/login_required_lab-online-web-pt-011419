@@ -7,8 +7,6 @@ class ApplicationController < ActionController::Base
     session[:name]
   end
 
-  private
-
   def require_logged_in
     redirect_to login_path if !current_user
   end
